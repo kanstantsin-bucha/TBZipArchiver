@@ -1,0 +1,6 @@
+framework module TBFileManager {
+  umbrella header "TBFileManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

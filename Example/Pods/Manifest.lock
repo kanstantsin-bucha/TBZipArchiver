@@ -1,0 +1,31 @@
+PODS:
+  - CDBKit (1.0.1)
+  - Expecta (1.0.5)
+  - Specta (1.0.6)
+  - TBFileManager (1.0.0)
+  - TBZipArchiver (1.1.0):
+    - CDBKit (~> 1.0)
+    - TBFileManager (~> 1.0)
+    - ZipArchive (~> 1.4)
+  - ZipArchive (1.4.0)
+
+DEPENDENCIES:
+  - Expecta
+  - Specta
+  - TBZipArchiver (from `../`)
+
+EXTERNAL SOURCES:
+  TBZipArchiver:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CDBKit: a6a979ebc52a9533b70b14d65e1bbaf14b378e34
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
+  TBFileManager: 02555f9e9f1c6eb4f2ac97e55b13b69c667836c4
+  TBZipArchiver: 3ca5975cf566b463e6f5fa2952426ea89cab1ce6
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
+
+PODFILE CHECKSUM: 8a8d4edd957e28d910465c5c7012a8719fe682bd
+
+COCOAPODS: 1.2.0
