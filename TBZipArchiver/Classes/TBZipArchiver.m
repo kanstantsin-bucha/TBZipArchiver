@@ -74,8 +74,9 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSFileManager * manager = [[NSFileManager alloc] init];
         ZipArchive * archivator = [[ZipArchive alloc] initWithFileManager:manager];
-        [TBFileManager createPathToDirectory:directory
-                             usingFileManager:manager];
+        [TBFileManager createPathToDirectory: directory
+                                       force: YES
+                            usingFileManager: manager];
         if (overwrite) {
             NSError * error = nil;
             [TBFileManager cleanupDirectory:directory
@@ -119,8 +120,9 @@
         archivator.compression = ZipArchiveCompressionBest;
         
         NSURL * fileDirectory = [self.fileURL URLByDeletingLastPathComponent];
-        [TBFileManager createPathToDirectory:fileDirectory
-                             usingFileManager:manager];
+        [TBFileManager createPathToDirectory: fileDirectory
+                                       force: YES
+                            usingFileManager: manager];
         
         BOOL result = YES;
         result = [archivator CreateZipFile2:self.fileURL.path
@@ -169,8 +171,9 @@
                          error:(NSError **)error {
     NSString * currentArchivedPath = archivedPath != nil ? archivedPath
                                                          : @"";
-    [TBFileManager createPathToDirectory:directory
-                         usingFileManager:manager];
+    [TBFileManager createPathToDirectory: directory
+                                   force: YES
+                        usingFileManager: manager];
     [TBFileManager enumerateContentsOfDirectory:directory
                                usingURLPredicate:URLPredicate
                                      fileManager:manager

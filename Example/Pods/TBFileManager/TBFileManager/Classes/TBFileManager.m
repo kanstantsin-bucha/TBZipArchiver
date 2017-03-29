@@ -78,6 +78,7 @@
 }
 
 + (void)createPathToDirectory:(NSURL *)directory
+                        force:(BOOL)force
              usingFileManager:(NSFileManager *)manager {
     NSFileManager * currentManager = manager != nil ? manager
                                                     : [NSFileManager defaultManager];
@@ -91,7 +92,8 @@
     
     
     NSError * error = nil;
-    if (type == TBFileItemFile) {
+    if (type == TBFileItemFile
+        && force) {
         
         [currentManager removeItemAtURL:directory
                                   error:&error];

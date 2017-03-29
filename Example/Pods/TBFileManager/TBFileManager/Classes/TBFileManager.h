@@ -29,7 +29,16 @@ typedef void (^TBDirectoryContentsEnumeration) (NSURL * _Nonnull itemURL, TBFile
                     toDirectory:(NSURL * _Nonnull)toDirectory
                usingFileManager:(NSFileManager * _Nullable)manager
                           error:(NSError * _Nullable * _Nullable)error;
+/**
+ create a directory at URL if no presents
+
+ @param directory directory URL
+ @param force override if a file presents at URL istead of directory
+ @param manager using provided fileManager
+ */
+
 + (void)createPathToDirectory:(NSURL * _Nonnull)directory
+                        force:(BOOL)force
              usingFileManager:(NSFileManager * _Nullable)manager;
 
 + (TBFileItemType)typeOfItemAtURL:(NSURL * _Nonnull)itemURL
