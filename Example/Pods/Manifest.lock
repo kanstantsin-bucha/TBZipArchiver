@@ -1,10 +1,10 @@
 PODS:
-  - CDBKit (1.0.1)
+  - CDBKit (1.1.1)
   - Expecta (1.0.5)
   - Specta (1.0.6)
-  - TBFileManager (1.0.1)
-  - TBZipArchiver (1.1.0):
-    - CDBKit (~> 1.0)
+  - TBFileManager (1.0.2)
+  - TBZipArchiver (1.1.1):
+    - CDBKit (~> 1.1)
     - TBFileManager (~> 1.0)
     - ZipArchive (~> 1.4)
   - ZipArchive (1.4.0)
@@ -19,13 +19,13 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CDBKit: a6a979ebc52a9533b70b14d65e1bbaf14b378e34
+  CDBKit: eb073c45d4bffbbad99dc9f2a79effbdab890ea7
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
-  TBFileManager: e1f8bd5bf4a7a15dbba222785e7bf38c6e355582
-  TBZipArchiver: 3ca5975cf566b463e6f5fa2952426ea89cab1ce6
+  TBFileManager: 1e3e905f7849dba8e50731b88a8cd2d3254423b3
+  TBZipArchiver: 6c827f88d814562bdbc4bafae8917456bf52be68
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 8a8d4edd957e28d910465c5c7012a8719fe682bd
+PODFILE CHECKSUM: 6866141d7a197947162b991af7ee7ecd3c450add
 
 COCOAPODS: 1.2.0

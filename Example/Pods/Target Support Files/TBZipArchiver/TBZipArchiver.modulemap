@@ -1,6 +1,0 @@
-framework module TBZipArchiver {
-  umbrella header "TBZipArchiver-umbrella.h"
-
-  export *
-  module * { export * }
-}

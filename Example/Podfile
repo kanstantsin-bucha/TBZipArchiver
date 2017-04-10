@@ -1,12 +1,21 @@
 use_frameworks!
 
-target 'TBZipArchiver_Example' do
-  pod 'TBZipArchiver', :path => '../'
 
-  target 'TBZipArchiver_Tests' do
-    inherit! :search_paths
-
-    pod 'Specta'
-  pod 'Expecta'
-  end
+abstract_target 'Pod' do
+    pod 'TBZipArchiver', :path => '../'
+    
+    target 'TBZipArchiver_Example' do
+        platform :ios, '8.0'
+        target 'TBZipArchiver_Tests' do
+            inherit! :search_paths
+            
+            pod 'Specta'
+            pod 'Expecta'
+        end
+    end
+    
+    target 'TBZipArchiverMac-Example' do
+        platform :osx, '10.10'
+    end
 end
+

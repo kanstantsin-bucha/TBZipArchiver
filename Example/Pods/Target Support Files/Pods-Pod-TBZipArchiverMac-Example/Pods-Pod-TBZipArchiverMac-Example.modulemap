@@ -1,0 +1,6 @@
+framework module Pods_Pod_TBZipArchiverMac_Example {
+  umbrella header "Pods-Pod-TBZipArchiverMac-Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

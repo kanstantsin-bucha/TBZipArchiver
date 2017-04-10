@@ -174,10 +174,10 @@
     [TBFileManager createPathToDirectory: directory
                                    force: YES
                         usingFileManager: manager];
-    [TBFileManager enumerateContentsOfDirectory:directory
-                               usingURLPredicate:URLPredicate
-                                     fileManager:manager
-                                enumerationBlock:^(NSURL *itemURL, TBFileItemType itemType, BOOL *stop) {
+    [TBFileManager enumerateContentsOfDirectory: directory
+                              usingURLPredicate: URLPredicate
+                                    fileManager: manager
+                               enumerationBlock: ^(NSURL *itemURL, TBFileItemType itemType, BOOL *stop) {
         NSString * archivedItemPath =
             [currentArchivedPath stringByAppendingPathComponent:itemURL.path.lastPathComponent];
             

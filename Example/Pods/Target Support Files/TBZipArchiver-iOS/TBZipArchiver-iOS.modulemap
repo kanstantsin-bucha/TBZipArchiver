@@ -1,0 +1,6 @@
+framework module TBZipArchiver {
+  umbrella header "TBZipArchiver-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

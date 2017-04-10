@@ -29,9 +29,10 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'truebucha' => 'truebucha@gmail.com' }
   s.source           = { :git => 'https://github.com/truebucha/TBZipArchiver.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/truebucha'
 
   s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.10'
 
   s.source_files = 'TBZipArchiver/Classes/**/*'
   
@@ -40,9 +41,8 @@ Pod::Spec.new do |s|
   # }
 
   s.public_header_files = 'TBZipArchiver/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'Foundation'
   s.dependency 'ZipArchive', '~> 1.4'
-  s.dependency 'CDBKit', '~> 1.0'
+  s.dependency 'CDBKit', '~> 1.1'
   s.dependency 'TBFileManager', '~> 1.0'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
