@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TBZipArchiver'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'TBZipArchiver selective archive/unarchive content using directory URL'
 
 # This description is used to generate tags and improve search results.
